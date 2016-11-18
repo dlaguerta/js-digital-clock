@@ -17,26 +17,23 @@ var currentTime = function() {
 };
 
 var test = currentTime();
-// console.log(test);
 
 var clockie = $('<h3>' + test + '</h3>');
-console.log(test);
-
-// var intervalID = window.setInterval(clockie, 10);
-
-// $('#clock').html(clockie);
-
-$('#clock').html(clockie);
-
- });
-
+// console.log(test);
 
 var display = function() {
-  var test = currentTime();
-  // console.log(test);
-
-  var clockie = $('<h3>' + test + '</h3>');
-
-  return clockie;
+  $('#clock').html(clockie);
+  // console.log(display)
 
 };
+
+var display = function() {
+  $('#clock').html(currentTime());
+  // console.log(display)
+
+};
+var vat = window.setInterval(display, 1000);
+
+
+
+ });
